@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Chat Application</title>
+</head>
+<body>
+    <!-- <section id="main">
+        <div class="header">
+            <h4 class="log">weChat</h4> 
+            <div class="user"></div>
+            <h5 class="group">Group Name</h5>
+        </div>
+        <div class="chat-body"></div>
+        <div class="inner-form">
+            <div class="message-form-container">
+            <div class="message-form">         
+            <input type="text" name="txt-msg" placeholder="type your message">
+           <div class="input-submit-container">
+            <label for="imageInput"><img src="clip.svg" class="clip"/></label>
+            <input type="file" id="imageInput">
+            <img src="send.svg" class="btn" onclick="sendClick()"/>
+           </div>
+           </div>
+        </div>
+        </div>
+    </section> -->
+    <section class="chat-main-section-container">
+        <div class="chat-head">
+            <h4 class="log">WeChat</h4>
+            <div class="user">User</div>
+            <h5  class="group">Group Name</h5>
+        </div>
+        <div class="chat-body">
+           
+        </div>
+        <div class="chat-footer-section-container">
+            <div class="chat-footer-container">
+               <div class="chat-text-sms">
+                <input type="text" name="text-msg" placeholder="type your massege......">
+               </div>
+               <div class="chat-send-sms">
+                <label for="imageInput"><img src="./clip.svg" class="clip"></label>
+                <!-- <input type="file" id="imageInput"> -->
+                <input type="file" id="imageInput" accept="image/*,application/pdf">
+                <img src="./send.svg" class="btn" onclick="sendClick()">
+               </div>
+            </div>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
